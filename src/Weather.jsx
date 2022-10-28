@@ -3,17 +3,17 @@ function Weather({info}){
     function imgs(){
         let id= info?.weather[0]?.id;
         if(id == 800){
-            return `../icons/clear.svg`;
+            return `http://openweathermap.org/img/wn/01d@2x.png`;
         }else if(id >= 200 && id <= 232){
-            return `../icons/storm.svg`;  
+            return `http://openweathermap.org/img/wn/11d@2x.png`;  
         }else if(id >= 600 && id <= 622){
-            return `../icons/snow.svg`;
+            return `http://openweathermap.org/img/wn/13d@2x.png`;
         }else if(id >= 701 && id <= 781){
-            return `../icons/haze.svg`;
+            return `http://openweathermap.org/img/wn/50d@2x.png`;
         }else if(id >= 801 && id <= 804){
-            return `../icons/cloud.svg`;
+            return `http://openweathermap.org/img/wn/02d@2x.png`;
         }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
-            return `../icons/rain.svg`;
+            return `http://openweathermap.org/img/wn/10d@2x.png`;
         }  
 
     }
